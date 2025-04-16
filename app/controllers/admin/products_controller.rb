@@ -5,6 +5,7 @@ class Admin::ProductsController < ApplicationController
     password: ENV["ADMIN_PASSWORD"]
   )
 
+
   def index
     @products = Product.order(id: :desc).all
   end
